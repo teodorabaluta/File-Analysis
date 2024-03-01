@@ -1,0 +1,20 @@
+BALUTA TEODORA-VALENTINA 332CC
+
+Am declarat mai multe stari, anume BOOK, ARTICLE, INPROCEEDINGS, 
+SKIPA, SKIPB, SKIPI, GHILIMELE_A, GHILIMELE_B, GHILIMELE_I prin
+care m-am mutat dintr-una in alta, cu ajutorul lui BEGIN.
+
+In starea INITIAL am verificat daca fragmentul meu este de tip
+carte(BOOK), articol de revista(ARTICLE) sau articol de
+conferinta(INPROCEEDINGS). Dupa am intrat in SKIPA, SKIPB, sau
+SKIPI pentru a sari peste acel cod care nu ne intereseaza. Din 
+aceasta stare de skip am intrat in starea aferenta tipului pe 
+care il avem. Asadar, am facut pentru fiecare tip afisarea 
+necesara a datelor citite din fisier. De asemena, pentru titlu
+am avut nevoie de o noua stare pentru a afisa ghilimelele de 
+final, iar de aici m-am intors in starea in care eram inainte.
+
+Pentru fiecare dintre cele trei stari principale am adaugat reguli,
+cum ar fi "}",  "}\n}" sau "}," pentru a sti sa sar peste ele.
+O alta scriere diferita este la pagini, unde am verificat daca
+unul dintre numere incepe sau nu cu 0, daca da, afisam fara 0.
